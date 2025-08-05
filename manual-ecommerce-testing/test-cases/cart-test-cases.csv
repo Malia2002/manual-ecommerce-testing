@@ -1,0 +1,13 @@
+Test Case ID,Test Scenario,Test Steps,Expected Result,Actual Result,Status
+TC_CART_01,Add item to cart,"Click ""Add to cart"" on a product",Item added successfully,"Item appeared in cart with correct details",Pass
+TC_CART_02,Remove item from cart,"Click ""Remove"" next to an item",Item is removed,"Item disappeared; cart updated instantly",Pass
+TC_CART_03,Update quantity,"Change quantity from 1 to 3",Total price updates accordingly,"Price recalculated correctly (3 × unit price)",Pass
+TC_CART_04,Add out-of-stock item,"Try to add unavailable item",Add button is disabled or error shown,"""Out of stock"" label displayed; button disabled",Pass
+TC_CART_05,Cart persistence,"Add item, reload page",Item remains in cart,"Cart retained items after refresh",Pass
+TC_CART_06,Apply coupon code,"Enter valid coupon code",Discount applied successfully,"10% discount reflected in subtotal",Pass
+TC_CART_07,Empty cart view,"Go to cart with no items","""Cart is empty"" message shown","Displayed empty cart UI with CTA to shop",Pass
+TC_CART_08,Add same item multiple times,"Add item repeatedly",Quantity increases correctly,"Quantity incremented (e.g., 1 → 2 → 3)",Pass
+TC_CART_09,Invalid quantity input,"Enter text instead of number",Validation error shown,"""Quantity must be a number"" error",Pass
+TC_CART_10,Add item without login,"Add item while logged out",Cart saves temporarily or prompts login,"Item saved; prompted to login at checkout",Pass
+TC_CART_11,Mobile responsiveness,"Add item using mobile view",Cart works properly on smaller screen,"UI adapted correctly; touch controls functional",Pass
+TC_CART_12,Price mismatch bug,"Add discounted item",Price shown should match listing,"Discounted price matched product page",Fail

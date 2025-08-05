@@ -1,0 +1,13 @@
+Test Case ID,Test Scenario,Test Steps,Expected Result,Actual Result,Status
+TC_REG_01,Valid registration,"Fill all fields with valid data and submit",User account is created successfully,"Account created; confirmation email sent",Pass
+TC_REG_02,Password mismatch,"Enter mismatched passwords and submit",Error message shown,"Passwords do not match error displayed",Pass
+TC_REG_03,Existing email,"Register with already registered email",Email already exists error,"Email is already in use error",Pass
+TC_REG_04,Empty required fields,"Leave required fields empty and submit",Form cannot be submitted,"Required field errors highlighted",Pass
+TC_REG_05,Invalid email format,"Enter incorrect email format",Validation error shown,"Invalid email format error",Pass
+TC_REG_06,Weak password,"Enter weak password (e.g., ""123"")",Password strength warning shown,"Password too weak warning (min. 8 chars)",Pass
+TC_REG_07,Long name input,"Enter name with 100+ characters",Input field limits characters,"Field truncated at 50 chars",Pass
+TC_REG_08,Checkbox unchecked,"Submit without accepting terms",Error shown, cannot proceed,"Accept terms to continue error",Pass
+TC_REG_09,Special characters in name,"Input special characters in name",Validation warning shown,"Accepted (allowed: hyphens, apostrophes)",Fail
+TC_REG_10,Autofill detection,"Use browser autofill for fields",Autofill works correctly,"Autofill populated fields as expected",Pass
+TC_REG_11,Register with phone only,"Register using only phone, not email",Registration fails,"Email is required error",Pass
+TC_REG_12,Confirm password hidden,"Ensure password is hidden by default",Password not visible,"Password masked (*****)",Pass
