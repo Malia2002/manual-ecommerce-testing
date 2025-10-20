@@ -56,5 +56,5 @@ Project Overview
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/lime-road-test-cases.git
+   git clone https://github.com/Malia2002/lime-road-test-cases.git
    cd lime-road-test-cases
