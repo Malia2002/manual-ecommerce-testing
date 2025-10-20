@@ -1,9 +1,0 @@
-ID,Title,Status,Severity,Priority,Environment,Steps to Reproduce,Expected,Actual,Reporter,Date,Assignee,Notes
-BUG-001,Login fails with valid credentials,Open,High,P1,"Chrome 119, Windows 11","1. Go to login page
-2. Enter valid email/password
-3. Click ""Sign In""",User logs in successfully,"""Invalid credentials"" error shown",malia,2025-06-10,Dev Team,Regression from v2.1.0
-BUG-002,Mobile menu not opening,In Progress,Medium,P2,"iOS 16, Safari","1. Open mobile site
-2. Tap hamburger menu",Menu expands,No response,malia,2025-06-15,UI Team,Affects iPhone 12/13
-BUG-003,Checkout price miscalculation,Verified Fixed,Critical,P0,"Firefox 120, macOS","1. Add 3x $10 items
-2. Apply 10% coupon
-3. Proceed to checkout",Total: $27 ($30 - $3 discount),Total: $30 (no discount applied),malia,2025-06-25,QA Team,Fixed in v2.3.1-hotfix
